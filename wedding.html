@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gaurav &amp; Radhika – Wedding Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<style>
+:root{--maroon:#5a0f1f;--deep:#3a0812;--gold:#d4a84b;--gold2:#f3dc9a;--cream:#fbf3e0;--ivory:#fffaf0;--ink:#4a1420;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--deep);color:var(--cream);font-family:'Cormorant Garamond',Georgia,serif;font-size:19px;overflow-x:hidden}
+.disp{font-family:'Cinzel Decorative',Georgia,serif}.hi{font-family:'Tiro Devanagari Hindi',serif}
+.gold{background:linear-gradient(90deg,#b8862b,#f3dc9a,#b8862b);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* intro */
+#intro{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle at 50% 40%,#7a1730,var(--deep) 70%);transition:opacity 1.2s,visibility 1.2s}
+#intro.open{opacity:0;visibility:hidden}
+#intro .door{position:absolute;top:0;bottom:0;width:50%;background:linear-gradient(var(--maroon),var(--deep));border:2px solid var(--gold);transition:transform 1.4s cubic-bezier(.7,0,.2,1)}
+#intro .l{left:0;transform-origin:left}#intro .r{right:0}
+#intro.open .l{transform:translateX(-100%)}#intro.open .r{transform:translateX(100%)}
+.intro-in{position:relative;z-index:2;padding:24px}
+.intro-in h1{font-size:clamp(34px,10vw,64px);line-height:1.15;margin:10px 0}
+.btn{display:inline-block;margin-top:28px;padding:14px 34px;border:1.5px solid var(--gold);color:var(--gold2);background:transparent;font:600 17px 'Cormorant Garamond',serif;letter-spacing:.2em;text-transform:uppercase;border-radius:40px;cursor:pointer;animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(212,168,75,.5)}100%{box-shadow:0 0 0 18px transparent}}
+.mandala{width:min(70vw,300px);animation:spin 60s linear infinite;display:block;margin:0 auto}
+@keyframes spin{to{transform:rotate(360deg)}}
+.sub{letter-spacing:.3em;text-transform:uppercase;font-size:14px;color:var(--gold2)}
+/* sections */
+section{position:relative;padding:70px 22px;text-align:center}
+.alt{background:linear-gradient(var(--maroon),var(--deep))}
+.wrap{max-width:720px;margin:0 auto}
+h2{font-size:clamp(26px,7vw,40px);margin-bottom:8px}
+.orn{color:var(--gold);letter-spacing:.6em;margin:10px 0 28px;font-size:18px}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 30%,#8a1d38,var(--maroon) 55%,var(--deep))}
+.hero h1{font-size:clamp(40px,12vw,84px);line-height:1.1}
+.amp{display:block;font:italic 400 clamp(28px,8vw,48px) 'Cormorant Garamond',serif;color:var(--gold);margin:6px 0}
+.names-hi{font-size:clamp(22px,6vw,32px);color:var(--gold2);margin-top:14px}
+.scroll{margin-top:40px;color:var(--gold2);font-size:13px;letter-spacing:.3em;animation:bob 1.8s infinite}
+@keyframes bob{50%{transform:translateY(8px)}}
+.petal{position:fixed;top:-30px;z-index:1;width:12px;height:16px;background:radial-gradient(circle at 30% 30%,#ffd36b,#e8890c);border-radius:60% 0 60% 0;opacity:.8;pointer-events:none;animation:fall linear infinite}
+@keyframes fall{to{transform:translate(40px,110vh) rotate(540deg)}}
+.rv{opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s}.rv.in{opacity:1;transform:none}
+.invite p{margin:10px 0;font-size:21px;line-height:1.6}
+.host{border:1px solid var(--gold);padding:22px;border-radius:6px;margin-top:24px;background:rgba(0,0,0,.18)}
+/* countdown */
+.cd{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.cd div{width:72px;padding:14px 4px;border:1px solid var(--gold);border-radius:8px;background:rgba(0,0,0,.25)}
+.cd b{display:block;font:700 28px 'Cinzel Decorative',serif;color:var(--gold2)}
+.cd span{font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+/* timeline */
+.tl{position:relative;max-width:640px;margin:0 auto;text-align:left;padding-left:34px}
+.tl:before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--gold),transparent)}
+.ev{position:relative;margin-bottom:26px;padding:20px 20px 18px;background:linear-gradient(135deg,#6e1426,#4a0c1a);border:1px solid rgba(212,168,75,.6);border-radius:8px}
+.ev:before{content:"";position:absolute;left:-32px;top:26px;width:14px;height:14px;background:var(--gold);transform:rotate(45deg);box-shadow:0 0 12px var(--gold)}
+.ev.big{border:2px solid var(--gold);background:linear-gradient(135deg,#8a1d38,#5a0f1f)}
+.date{color:var(--gold);font-size:15px;letter-spacing:.18em;text-transform:uppercase}
+.ev h3{font:700 22px 'Cinzel Decorative',serif;color:var(--gold2);margin:6px 0}
+.ev p{font-size:20px}.note{font-style:italic;color:#e8d7b0;font-size:17px}
+/* venues */
+.venues{display:grid;gap:18px;max-width:640px;margin:0 auto}
+.v{padding:26px 20px;border:1px solid var(--gold);border-radius:8px;background:rgba(0,0,0,.2)}
+.v h3{font:700 21px 'Cinzel Decorative',serif;color:var(--gold2);margin-bottom:8px}
+.v a{display:inline-block;margin-top:14px;padding:10px 24px;border:1px solid var(--gold);border-radius:30px;color:var(--gold2);text-decoration:none;font-size:16px;letter-spacing:.12em;text-transform:uppercase}
+footer{padding:50px 20px 70px;text-align:center;background:var(--deep);color:var(--gold2)}
+@media(min-width:700px){.venues{grid-template-columns:1fr 1fr}}
+/* @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}} */
+</style>
+</head>
+<body>
+
+<div id="intro">
+  <div class="door l"></div><div class="door r"></div>
+  <div class="intro-in">
+    <svg class="mandala" viewBox="0 0 200 200" fill="none" stroke="#d4a84b" stroke-width="1.2" aria-hidden="true">
+      <circle cx="100" cy="100" r="95"/><circle cx="100" cy="100" r="70" stroke-dasharray="3 5"/><circle cx="100" cy="100" r="30"/>
+      <g id="p"><path d="M100 5C115 40 115 60 100 80C85 60 85 40 100 5Z"/><path d="M100 195C115 160 115 140 100 120C85 140 85 160 100 195Z"/><path d="M5 100C40 85 60 85 80 100C60 115 40 115 5 100Z"/><path d="M195 100C160 85 140 85 120 100C140 115 160 115 195 100Z"/></g>
+      <use href="#p" transform="rotate(45 100 100)"/>
+    </svg>
+    <p class="sub" style="margin-top:18px">॥ Shree Ganeshay Namah ॥</p>
+    <h1 class="disp gold">Gaurav<br>&amp; Radhika</h1>
+    <p class="sub">Request the pleasure of your company</p>
+    <button class="btn" id="openBtn">Open Invitation</button>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="sub">The Wedding Of</p>
+    <h1 class="disp gold" style="margin-top:18px">Gaurav<span class="amp">&amp;</span>Radhika</h1>
+    <p class="names-hi hi">गौरव &nbsp;♥&nbsp; राधिका</p>
+    <p class="sub" style="margin-top:22px">2 November 2026 · Dehradun</p>
+    <p class="scroll">SCROLL ↓</p>
+  </div>
+</section>
+
+<section class="alt invite">
+  <div class="wrap rv">
+    <h2 class="disp gold">With Joyful Hearts</h2>
+    <div class="orn">❖ ❖ ❖</div>
+    <p>We joyfully invite you and your family to celebrate the wedding of</p>
+    <p class="disp gold" style="font-size:30px">Gaurav &amp; Radhika</p>
+    <p>Your presence and blessings will make our celebrations truly complete.</p>
+    <div class="host">
+      <p class="sub">With the blessings of</p>
+      <p class="disp" style="color:var(--gold2);font-size:24px;margin-top:8px">Mrs. Chinta Devi</p>
+      <p class="hi" style="color:var(--gold2)">श्रीमती चिंता देवी</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap rv">
+    <h2 class="disp gold">Counting Down</h2>
+    <div class="orn">❖</div>
+    <p class="sub" style="margin-bottom:18px">to the Wedding Day · 2 November 2026</p>
+    <div class="cd" id="cd">
+      <div><b id="d">--</b><span>Days</span></div><div><b id="h">--</b><span>Hours</span></div>
+      <div><b id="m">--</b><span>Mins</span></div><div><b id="s">--</b><span>Secs</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2 class="disp gold rv">Celebrations</h2>
+    <div class="orn rv">❖ ❖ ❖</div>
+    <div class="tl">
+      <div class="ev rv"><div class="date">Friday · 16 October 2026</div><h3>Soil Worship</h3><p>Mitti Pujan · 10:00 AM</p></div>
+      <div class="ev rv"><div class="date">Friday · 30 October 2026</div><h3>Haldi Ceremony</h3><p>Haldi Haath · 10:00 AM</p></div>
+      <div class="ev rv"><div class="date">Saturday · 31 October 2026</div><h3>Kirtan Ceremony</h3><p>Kirtan · 4:00 PM</p></div>
+      <div class="ev rv"><div class="date">Sunday · 1 November 2026</div><h3>Manda Pujan Ceremony</h3><p>Manda Pujan · 5:00 PM</p></div>
+      <div class="ev big rv"><div class="date">Monday · 2 November 2026</div><h3>Wedding Day</h3><p>Baraat departure · 5:00 PM</p><p>Wedding rituals · as per the auspicious time (Shubh Lagna)</p></div>
+      <div class="ev rv"><div class="date">Tuesday · 3 November 2026</div><h3>Griha Pravesh Ceremony</h3><p>Griha Pravesh · 8:00 AM</p></div>
+      <div class="ev rv"><div class="date">Wednesday · 4 November 2026</div><h3>Wedding Reception &amp; Dinner</h3><p>Reception / Preetibhoj · 8:00 PM</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="disp gold rv">Venues</h2>
+    <div class="orn rv">❖</div>
+    <div class="venues">
+      <div class="v rv"><h3>Dhaneshwari Farm House</h3><p>Devipur, Umedpur,<br>Dehradun</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Dhaneshwari+Farm+House+Devipur+Umedpur+Dehradun" target="_blank" rel="noopener">View on Map</a></div>
+      <div class="v rv"><h3>Rawat Farm</h3><p>Jogiwala, Badripur,<br>Dehradun</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Rawat+Farm+Jogiwala+Badripur+Dehradun" target="_blank" rel="noopener">View on Map</a></div>
+    </div>
+    <p class="note rv" style="margin-top:22px">Please refer to your invitation card for the venue of each ceremony.</p>
+  </div>
+</section>
+
+<footer>
+  <p class="sub">॥ Shubh Vivah ॥</p>
+  <p class="disp gold" style="font-size:30px;margin:14px 0">Gaurav &amp; Radhika</p>
+  <p>We look forward to celebrating with you.</p>
+</footer>
+
+<script>
+const intro=document.getElementById('intro');
+document.getElementById('openBtn').onclick=()=>{intro.classList.add('open');document.body.style.overflow='';window.scrollTo(0,0)};
+document.body.style.overflow='hidden';
+// petals
+for(let i=0;i<14;i++){const p=document.createElement('div');p.className='petal';p.style.left=Math.random()*100+'vw';p.style.animationDuration=(9+Math.random()*10)+'s';p.style.animationDelay=(-Math.random()*15)+'s';document.body.appendChild(p)}
+// reveal
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+// countdown to 2 Nov 2026, 00:00 IST
+const T=new Date('2026-11-02T00:00:00+05:30').getTime();
+function tick(){let t=Math.max(0,T-Date.now());const f=(n)=>String(n).padStart(2,'0');
+d.textContent=Math.floor(t/864e5);h.textContent=f(Math.floor(t/36e5)%24);m.textContent=f(Math.floor(t/6e4)%60);s.textContent=f(Math.floor(t/1e3)%60)}
+tick();setInterval(tick,1000);
+</script>
+</body>
+</html>
